@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOUR VOICE｜生徒の声を、学校の未来へ。</title>
+<style>
+:root{
+  --navy:#20384f; --blue:#477b98; --blue-dark:#315f7a;
+  --pale:#eef4f7; --line:#dce5ea; --text:#263746; --muted:#687985;
+  --white:#fff; --green:#2f765c; --green-bg:#e9f4ee;
+  --amber:#8a641d; --amber-bg:#fbf3df; --red:#92514d; --red-bg:#f8eceb;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#f6f8fa;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.65}
+header{background:#fff;border-bottom:1px solid var(--line)}
+.header-inner{max-width:1080px;margin:auto;padding:17px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-size:21px;font-weight:800;letter-spacing:.08em;color:var(--navy)}
+.teacher{font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line);padding:7px 11px;border-radius:6px}
+main{max-width:1080px;margin:0 auto;padding:34px 22px 60px}
+.hero{background:var(--navy);color:#fff;border-radius:12px;padding:36px 34px;margin-bottom:24px}
+.eyebrow{font-size:12px;letter-spacing:.12em;color:#c6d8e4;margin:0 0 9px}
+h1{font-size:clamp(25px,4vw,36px);line-height:1.35;margin:0 0 12px}
+.hero p{margin:0;color:#e2ebf0;max-width:650px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:23px}
+.btn{border:0;border-radius:7px;padding:11px 17px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.btn-primary{background:#fff;color:var(--navy)}
+.btn-secondary{background:#dce8ef;color:var(--navy)}
+.section-title{font-size:21px;color:var(--navy);margin:0 0 5px}
+.section-lead{margin:0 0 19px;color:var(--muted);font-size:14px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px;margin-bottom:24px}
+.tools{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}
+label{display:block;font-size:12px;font-weight:700;color:#536574;margin-bottom:5px}
+input,select{width:100%;min-height:42px;padding:9px 11px;border:1px solid #cbd7de;border-radius:6px;background:#fff;color:var(--text);font:inherit}
+.date-tools{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.filter-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:14px}
+.reset{border:0;background:none;color:var(--blue-dark);text-decoration:underline;cursor:pointer;font:inherit;font-size:13px}
+.count{font-size:13px;color:var(--muted)}
+.cards{display:grid;gap:12px}
+.opinion{background:#fff;border:1px solid var(--line);border-radius:9px;padding:17px 18px}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.category{font-size:11px;color:var(--muted);margin-bottom:5px}
+.opinion h3{font-size:16px;line-height:1.5;margin:0 0 9px;color:var(--text)}
+.status{font-size:11px;font-weight:700;padding:4px 9px;border-radius:20px;white-space:nowrap}
+.status.done{background:var(--green-bg);color:var(--green)}
+.status.pending{background:var(--amber-bg);color:var(--amber)}
+.status.no{background:var(--red-bg);color:var(--red)}
+.meta{font-size:12px;color:var(--muted)}
+.card-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:13px;padding-top:12px;border-top:1px solid #edf1f3}
+.like{background:#fff;border:1px solid #cbd7de;border-radius:20px;padding:6px 12px;color:var(--blue-dark);font:inherit;font-size:13px;cursor:pointer}
+.like[aria-pressed="true"]{background:#edf4f8;border-color:#8eafc1;font-weight:700}
+.like:disabled{opacity:.65;cursor:default}
+.empty{background:#fff;border:1px dashed #cbd7de;border-radius:9px;padding:28px;text-align:center;color:var(--muted)}
+.notice{font-size:12px;color:var(--muted);margin:14px 2px 0}
+footer{text-align:center;color:#82909a;font-size:11px;padding:22px}
+@media(max-width:680px){
+ main{padding:22px 14px 44px}.header-inner{padding:14px}
+ .hero{padding:27px 22px}.panel{padding:16px}
+ .tools{grid-template-columns:1fr}.date-tools{grid-template-columns:1fr 1fr}
+ .filter-bottom{align-items:flex-start;flex-direction:column}
+ .card-top{align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="brand">YOUR VOICE</div>
+    <a class="teacher" href="#" onclick="alert('教員用ページは次の制作段階で追加します。');return false;">教員用ログイン</a>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <p class="eyebrow">YOUR VOICE</p>
+    <h1>生徒の声を、学校の未来へ。</h1>
+    <p>学校をよりよくするためのご意見・ご提案をお聞かせください。皆さんから寄せられた意見と、その対応状況を確認できます。</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#opinions">みんなの意見を見る</a>
+      <button class="btn btn-secondary" type="button" onclick="alert('意見投稿フォームは次の制作段階で追加します。')">ご意見・ご提案を送る</button>
+    </div>
+  </section>
+
+  <section id="opinions">
+    <h2 class="section-title">みんなの意見</h2>
+    <p class="section-lead">公開が許可され、個人情報を確認した意見を掲載しています。</p>
+    <div class="panel">
+      <div class="tools">
+        <div>
+          <label for="keyword">キーワード</label>
+          <input id="keyword" type="search" placeholder="例：体育館、昼休み、制服">
+        </div>
+        <div>
+          <label for="status">対応状況</label>
+          <select id="status">
+            <option value="all">すべて</option>
+            <option value="done">実行</option>
+            <option value="pending">検討中</option>
+            <option value="no">実行不可</option>
+          </select>
+        </div>
+        <div>
+          <label for="sort">並び替え</label>
+          <select id="sort">
+            <option value="popular">いいねが多い順</option>
+            <option value="newest">最新順</option>
+            <option value="oldest">最古順</option>
+          </select>
+        </div>
+      </div>
+      <div class="date-tools">
+        <div><label for="fromDate">投稿日（開始）</label><input id="fromDate" type="date"></div>
+        <div><label for="toDate">投稿日（終了）</label><input id="toDate" type="date"></div>
+      </div>
+      <div class="filter-bottom">
+        <span class="count" id="count">表示中：0件</span>
+        <button class="reset" id="reset" type="button">検索条件をリセット</button>
+      </div>
+    </div>
+    <div class="cards" id="cards" aria-live="polite"></div>
+    <p class="notice">※いいねはこの試作を開いているブラウザ内に保存されます。実際の学校運用で全員のいいね数を共有するには、サーバーと安全なデータ管理の設定が必要です。</p>
+  </section>
+</main>
+<footer>YOUR VOICE｜生徒の声を、学校の未来へ。</footer>
+<script>
+const initialOpinions = [
+ {id:1,title:"体育館にエアコンを設置してほしい",category:"学校施設",date:"2026-10-28",status:"done",likes:128},
+ {id:2,title:"昼休みに利用できる教室を増やしてほしい",category:"学校生活",date:"2026-10-21",status:"pending",likes:86},
+ {id:3,title:"制服と私服を併用できるようにしてほしい",category:"制服・服装",date:"2026-10-15",status:"no",likes:64},
+ {id:4,title:"図書室の開館時間を少し延長してほしい",category:"施設・学習環境",date:"2026-09-30",status:"pending",likes:42},
+ {id:5,title:"自動販売機の飲み物の種類を増やしてほしい",category:"学校生活",date:"2026-09-12",status:"done",likes:31},
+ {id:6,title:"校内の案内表示を分かりやすくしてほしい",category:"学校施設",date:"2026-08-25",status:"no",likes:12}
+];
+const labels={done:"実行",pending:"検討中",no:"実行不可"};
+const likedKey="your-voice-liked-demo";
+let liked=new Set(JSON.parse(localStorage.getItem(likedKey)||"[]"));
+const $=id=>document.getElementById(id);
+function render(){
+ const keyword=$("keyword").value.trim().toLocaleLowerCase();
+ const status=$("status").value, sort=$("sort").value;
+ const from=$("fromDate").value, to=$("toDate").value;
+ let list=initialOpinions.filter(o=>{
+   const matchWord=(o.title+" "+o.category).toLocaleLowerCase().includes(keyword);
+   return matchWord&&(status==="all"||o.status===status)&&(!from||o.date>=from)&&(!to||o.date<=to);
+ });
+ list.sort((a,b)=>sort==="popular"?(b.likes+(liked.has(b.id)?1:0))-(a.likes+(liked.has(a.id)?1:0)):sort==="newest"?b.date.localeCompare(a.date):a.date.localeCompare(b.date));
+ $("count").textContent=`表示中：${list.length}件`;
+ $("cards").innerHTML=list.length?list.map(o=>{
+   const mine=liked.has(o.id), n=o.likes+(mine?1:0);
+   return `<article class="opinion">
+     <div class="card-top"><div><div class="category">${o.category}</div><h3>${escapeHTML(o.title)}</h3></div><span class="status ${o.status}">${labels[o.status]}</span></div>
+     <div class="meta">投稿日：${o.date.replaceAll("-","/")}</div>
+     <div class="card-bottom"><span class="meta">対応状況：${labels[o.status]}</span><button class="like" type="button" data-id="${o.id}" aria-pressed="${mine}" ${mine?"disabled":""}>♥ いいね ${n}${mine?"（済）":""}</button></div>
+   </article>`;
+ }).join(""):'<div class="empty">条件に一致する意見はありません。<br>検索条件を変更してみてください。</div>';
+ document.querySelectorAll(".like:not(:disabled)").forEach(btn=>btn.addEventListener("click",()=>{
+   const id=Number(btn.dataset.id); liked.add(id);
+   localStorage.setItem(likedKey,JSON.stringify([...liked])); render();
+ }));
+}
+function escapeHTML(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+["keyword","status","sort","fromDate","toDate"].forEach(id=>$(id).addEventListener(id==="keyword"?"input":"change",render));
+$("reset").addEventListener("click",()=>{["keyword","fromDate","toDate"].forEach(id=>$(id).value="");$("status").value="all";$("sort").value="popular";render();});
+render();
+</script>
+</body>
+</html>
